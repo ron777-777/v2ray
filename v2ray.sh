@@ -2732,6 +2732,10 @@ menu() {
 		echo
 		echo -e "$yellow 11. $none其他"
 		echo
+		echo -e "$yellow 12. $none自定义uuid"
+		echo
+		echo -e "$yellow 13. $none自定义额外id"
+		echo
 		echo -e "温馨提示...如果你不想执行选项...按$yellow Ctrl + C $none即可退出"
 		echo
 		read -p "$(echo -e "请选择菜单 [${magenta}1-11$none]:")" choose
@@ -2783,6 +2787,14 @@ menu() {
 				;;
 			11)
 				other
+				break
+				;;
+			12)
+				custom_uuid
+				break
+				;;
+			13)
+				change_v2ray_alterId
 				break
 				;;
 			*)
